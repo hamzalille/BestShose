@@ -17,6 +17,7 @@ const Product = ({product} ) => {
         </Card.Text>
       <h3>Stock: {product.countInStock}</h3>
     </Card>
+    // TESTS ONLY
   )
 }
 
