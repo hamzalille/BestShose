@@ -1,6 +1,6 @@
 import {Card} from 'react-bootstrap'
 import React from 'react'
-import Rating from './components/Rating'
+import Rating from './Rating'
 
 const Product = ({product} ) => {
   return (
@@ -17,7 +17,6 @@ const Product = ({product} ) => {
         </Card.Text>
       <h3>Stock: {product.countInStock}</h3>
     </Card>
-    // TESTS ONLY
   )
 }
 
