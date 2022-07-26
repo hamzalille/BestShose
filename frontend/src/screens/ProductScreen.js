@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import {
-  Row,
-  Col,
-  Image,
-  ListGroup,
-  Card,
-  Button,
-  Form,
-} from "react-bootstrap";
+import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import Rating from "../components/Rating";
-import Product from "../components/Product";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -71,7 +62,11 @@ const ProductScreen = () => {
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
-                <Button className="btn-block" type="button" disabled={product.countInStock === 0}>
+                <Button
+                  className="btn-block"
+                  type="button"
+                  disabled={product.countInStock === 0}
+                >
                   Ajouter au panier
                 </Button>
               </ListGroup.Item>

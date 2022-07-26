@@ -18,7 +18,9 @@ const HomeScreen = () => {
 
   return (
     <>
-      <h1>Nos produits</h1>
+      <Row className="m-3">
+        <h1>Nos produits</h1>
+      </Row>
       <Row>
         {Products.map((product) => (
           <Col sm={12} md={6} lg={4} xL={3}>
